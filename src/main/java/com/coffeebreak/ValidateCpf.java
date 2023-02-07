@@ -1,12 +1,12 @@
 package com.coffeebreak;
 
-public class ValidadeCpf implements ValidateDocument {
+public class ValidateCpf implements ValidateDocument {
 
     private Integer CPF_VALID_LENGTH = 11;
     private Integer FIRST_DIGIT_FACTOR = 10;
     private Integer SECOND_DIGIT_FACTOR = 11;
 
-    public Boolean validade(String document) {
+    public Boolean validate(String document) {
         if (document.isEmpty()) {
             return false;
         }
